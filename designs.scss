@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Courgette&display=swap');
+@mixin common($bordercol,$background) {
+    height:30em;
+    background-color:$background;
+}
+@mixin bladedesign($width,$top)
+{
+    content:'';
+    position:absolute;
+    width:$width;
+    background-color:rgba( #a3a2ddcb,1.0);
+    height:34em;
+    margin-left:-10.3px;
+    transform:skewY(10.6deg);
+    z-index:-1;
+    top:$top;
+    box-shadow:(0px 3px 0px)black;
+}
+@mixin mq($args...) {
+ @if length($args)==1 {
+    @media only screen and (min-width:nth($args,1)){
+        @content;
+    } 
+}
+ @if length($args)==2 {  
+    @media only screen and (min-width:nth($args,1)) and (max-width:nth($args,2)) {
+        @content;
+    }
+
+}
+ }
+ h5
+ {
+    font-family: 'Courgette', cursive;
+    color:white;
+    font-size:14px;
+ }
+.row
+{
+    margin-top:20%;
+    @include mq(1024px)
+    {
+        margin-top:6%;
+    }
+}
+.first
+{
+    @include common(black,rgba( #a3a2ddcb,1.0));
+
+    &:before
+    {
+     @include mq(1024px)
+      {
+       margin-top:7.2%;
+       @include bladedesign(17.4%,12px);
+      } 
+      @include mq(768px,1023px)
+      {
+       @include bladedesign(28.3%,17.2%);
+      }
+      @include mq(320px,767px)
+      {
+       @include bladedesign(29.9%,15%);
+      }
+    } 
+    img
+    {
+    border: 2px solid white;
+    margin-top:12em;
+    border-radius:50%;
+    padding:2%;
+    @include mq(768px,1023px)
+    {
+        margin-left:3.5em;
+    }
+    @include mq(1024px)
+      {
+        margin-left:1.5em;
+      }
+    }
+    @include mq(1024px)
+    {
+    margin-left:-1%;
+    } 
+}
+.second
+{
+    @include common(none,rgba( #fff,1.0));
+    @include mq(1024px)
+    {
+        margin-left:0.9%;
+    }
+}
+
+
+
+

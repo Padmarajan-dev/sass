@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat|Courgette&display=swap");
+h5 {
+  font-family: "Courgette", cursive;
+  color: white;
+  font-size: 14px;
+}
+
+.row {
+  margin-top: 20%;
+}
+@media only screen and (min-width: 1024px) {
+  .row {
+    margin-top: 6%;
+  }
+}
+
+.first {
+  height: 30em;
+  background-color: #a3a2dd;
+}
+@media only screen and (min-width: 1024px) {
+  .first:before {
+    margin-top: 7.2%;
+    content: "";
+    position: absolute;
+    width: 17.4%;
+    background-color: #a3a2dd;
+    height: 34em;
+    margin-left: -10.3px;
+    transform: skewY(10.6deg);
+    z-index: -1;
+    top: 12px;
+    box-shadow: 0px 3px 0px black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .first:before {
+    content: "";
+    position: absolute;
+    width: 28.3%;
+    background-color: #a3a2dd;
+    height: 34em;
+    margin-left: -10.3px;
+    transform: skewY(10.6deg);
+    z-index: -1;
+    top: 17.2%;
+    box-shadow: 0px 3px 0px black;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .first:before {
+    content: "";
+    position: absolute;
+    width: 29.9%;
+    background-color: #a3a2dd;
+    height: 34em;
+    margin-left: -10.3px;
+    transform: skewY(10.6deg);
+    z-index: -1;
+    top: 15%;
+    box-shadow: 0px 3px 0px black;
+  }
+}
+.first img {
+  border: 2px solid white;
+  margin-top: 12em;
+  border-radius: 50%;
+  padding: 2%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .first img {
+    margin-left: 3.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .first img {
+    margin-left: 1.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .first {
+    margin-left: -1%;
+  }
+}
+
+.second {
+  height: 30em;
+  background-color: white;
+}
+@media only screen and (min-width: 1024px) {
+  .second {
+    margin-left: 0.9%;
+  }
+}
+
+/*# sourceMappingURL=designs.css.map */
